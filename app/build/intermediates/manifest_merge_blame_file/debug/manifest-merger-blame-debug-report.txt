@@ -75,106 +75,105 @@
 43-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:14:9-54
 44        android:supportsRtl="true"
 44-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:15:9-35
-45        android:testOnly="true"
-46        android:theme="@style/Theme.Skaner_alpha.NoActionBar" >
-46-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:16:9-62
-47        <activity
-47-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:17:9-19:64
-48            android:name="com.example.skaner.WydajActivityLokalizacja"
-48-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:17:19-59
-49            android:screenOrientation="portrait"
-49-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:18:13-49
-50            android:windowSoftInputMode="adjustPan" />
-50-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:19:13-52
-51        <activity
-51-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:20:9-22:54
-52            android:name="com.example.skaner.WydajActivity"
-52-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:20:19-48
-53            android:screenOrientation="portrait"
-53-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:21:13-49
-54            android:windowSoftInputMode="adjustPan" />
-54-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:22:13-52
-55        <activity
-55-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:23:9-25:54
-56            android:name="com.example.skaner.RozlozActivityJestTowar"
-56-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:23:19-58
-57            android:screenOrientation="portrait"
-57-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:24:13-49
-58            android:windowSoftInputMode="adjustPan" />
-58-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:25:13-52
-59        <activity
-59-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:26:9-28:54
-60            android:name="com.example.skaner.RozlozActivityBrakTowaru"
-60-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:26:19-59
-61            android:screenOrientation="portrait"
-61-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:27:13-49
-62            android:windowSoftInputMode="adjustPan" />
-62-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:28:13-52
-63        <activity
-63-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:29:9-32:55
-64            android:name="com.example.skaner.RozlozActivity"
-64-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:30:13-43
-65            android:screenOrientation="portrait"
-65-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:31:13-49
-66            android:windowSoftInputMode="adjustPan" />
-66-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:32:13-52
-67        <activity
-67-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:33:9-36:55
-68            android:name="com.example.skaner.ZlokalizujActivityCrud"
-68-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:34:13-51
-69            android:screenOrientation="portrait"
-69-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:35:13-49
-70            android:windowSoftInputMode="adjustPan" />
-70-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:36:13-52
-71        <activity
-71-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:37:9-40:55
-72            android:name="com.example.skaner.ZlokalizujActivity"
-72-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:38:13-47
-73            android:screenOrientation="portrait"
-73-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:39:13-49
-74            android:windowSoftInputMode="adjustPan" />
-74-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:40:13-52
-75        <activity
-75-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:41:9-45:15
-76            android:name="com.example.skaner.MenuActivity"
-76-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:42:13-41
-77            android:screenOrientation="portrait"
-77-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:43:13-49
-78            android:windowSoftInputMode="adjustPan" />
-78-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:44:13-52
-79        <activity
-79-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:46:9-49:49
-80            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-80-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:47:13-74
-81            android:clearTaskOnLaunch="true"
-81-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:49:13-45
-82            android:screenOrientation="portrait"
-82-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:48:13-49
-83            android:stateNotNeeded="true"
-83-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:51:13-42
-84            android:theme="@style/zxing_CaptureTheme"
-84-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:52:13-54
-85            android:windowSoftInputMode="stateAlwaysHidden" />
-85-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:53:13-60
-86        <activity
-86-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:50:9-59:20
-87            android:name="com.example.skaner.LoginActivity"
-87-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:51:13-42
-88            android:screenOrientation="portrait"
-88-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:52:13-49
-89            android:windowSoftInputMode="adjustPan" >
-89-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:53:13-52
-90            <intent-filter>
-90-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:54:13-58:29
-91                <action android:name="android.intent.action.MAIN" />
-91-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:55:17-69
-91-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:55:25-66
-92
-93                <category android:name="android.intent.category.LAUNCHER" />
-93-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:57:17-77
-93-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:57:27-74
-94            </intent-filter>
-95        </activity>
-96    </application>
-97
-98</manifest>
+45        android:theme="@style/Theme.Skaner_alpha.NoActionBar" >
+45-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:16:9-62
+46        <activity
+46-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:17:9-19:64
+47            android:name="com.example.skaner.WydajActivityLokalizacja"
+47-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:17:19-59
+48            android:screenOrientation="portrait"
+48-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:18:13-49
+49            android:windowSoftInputMode="adjustPan" />
+49-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:19:13-52
+50        <activity
+50-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:20:9-22:54
+51            android:name="com.example.skaner.WydajActivity"
+51-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:20:19-48
+52            android:screenOrientation="portrait"
+52-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:21:13-49
+53            android:windowSoftInputMode="adjustPan" />
+53-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:22:13-52
+54        <activity
+54-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:23:9-25:54
+55            android:name="com.example.skaner.RozlozActivityJestTowar"
+55-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:23:19-58
+56            android:screenOrientation="portrait"
+56-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:24:13-49
+57            android:windowSoftInputMode="adjustPan" />
+57-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:25:13-52
+58        <activity
+58-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:26:9-28:54
+59            android:name="com.example.skaner.RozlozActivityBrakTowaru"
+59-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:26:19-59
+60            android:screenOrientation="portrait"
+60-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:27:13-49
+61            android:windowSoftInputMode="adjustPan" />
+61-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:28:13-52
+62        <activity
+62-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:29:9-32:55
+63            android:name="com.example.skaner.RozlozActivity"
+63-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:30:13-43
+64            android:screenOrientation="portrait"
+64-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:31:13-49
+65            android:windowSoftInputMode="adjustPan" />
+65-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:32:13-52
+66        <activity
+66-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:33:9-36:55
+67            android:name="com.example.skaner.ZlokalizujActivityCrud"
+67-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:34:13-51
+68            android:screenOrientation="portrait"
+68-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:35:13-49
+69            android:windowSoftInputMode="adjustPan" />
+69-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:36:13-52
+70        <activity
+70-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:37:9-40:55
+71            android:name="com.example.skaner.ZlokalizujActivity"
+71-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:38:13-47
+72            android:screenOrientation="portrait"
+72-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:39:13-49
+73            android:windowSoftInputMode="adjustPan" />
+73-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:40:13-52
+74        <activity
+74-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:41:9-45:15
+75            android:name="com.example.skaner.MenuActivity"
+75-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:42:13-41
+76            android:screenOrientation="portrait"
+76-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:43:13-49
+77            android:windowSoftInputMode="adjustPan" />
+77-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:44:13-52
+78        <activity
+78-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:46:9-49:49
+79            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+79-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:47:13-74
+80            android:clearTaskOnLaunch="true"
+80-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:49:13-45
+81            android:screenOrientation="portrait"
+81-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:48:13-49
+82            android:stateNotNeeded="true"
+82-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:51:13-42
+83            android:theme="@style/zxing_CaptureTheme"
+83-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:52:13-54
+84            android:windowSoftInputMode="stateAlwaysHidden" />
+84-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:53:13-60
+85        <activity
+85-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:50:9-59:20
+86            android:name="com.example.skaner.LoginActivity"
+86-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:51:13-42
+87            android:screenOrientation="portrait"
+87-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:52:13-49
+88            android:windowSoftInputMode="adjustPan" >
+88-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:53:13-52
+89            <intent-filter>
+89-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:54:13-58:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:55:17-69
+90-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:55:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:57:17-77
+92-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:57:27-74
+93            </intent-filter>
+94        </activity>
+95    </application>
+96
+97</manifest>
