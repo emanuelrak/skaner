@@ -1,0 +1,180 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.skaner"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:6:5-79
+11-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:8:5-65
+13-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:8:22-62
+14
+15    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+16    <uses-feature
+16-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:25:5-27:36
+17        android:name="android.hardware.camera"
+17-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:26:9-47
+18        android:required="false" />
+18-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:27:9-33
+19    <uses-feature
+19-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:28:5-30:36
+20        android:name="android.hardware.camera.front"
+20-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:29:9-53
+21        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+21-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:30:9-33
+22    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:33:5-35:36
+24        android:name="android.hardware.camera.autofocus"
+24-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:34:9-57
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:35:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:36:5-38:36
+27        android:name="android.hardware.camera.flash"
+27-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:37:9-53
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:38:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:39:5-41:36
+30        android:name="android.hardware.screen.landscape"
+30-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:40:9-57
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:41:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:42:5-44:36
+33        android:name="android.hardware.wifi"
+33-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:43:9-45
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:44:9-33
+35
+36    <application
+36-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:10:5-60:19
+37        android:allowBackup="true"
+37-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:11:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.3.1] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\8dbd859d1cd89239b42e7382b4fc40d7\core-1.3.1\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:extractNativeLibs="false"
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:12:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:13:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:14:9-54
+44        android:supportsRtl="true"
+44-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:15:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.Skaner_alpha.NoActionBar" >
+46-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:16:9-62
+47        <activity
+47-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:17:9-19:64
+48            android:name="com.example.skaner.WydajActivityLokalizacja"
+48-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:17:19-59
+49            android:screenOrientation="portrait"
+49-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:18:13-49
+50            android:windowSoftInputMode="adjustPan" />
+50-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:19:13-52
+51        <activity
+51-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:20:9-22:54
+52            android:name="com.example.skaner.WydajActivity"
+52-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:20:19-48
+53            android:screenOrientation="portrait"
+53-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:21:13-49
+54            android:windowSoftInputMode="adjustPan" />
+54-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:22:13-52
+55        <activity
+55-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:23:9-25:54
+56            android:name="com.example.skaner.RozlozActivityJestTowar"
+56-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:23:19-58
+57            android:screenOrientation="portrait"
+57-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:24:13-49
+58            android:windowSoftInputMode="adjustPan" />
+58-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:25:13-52
+59        <activity
+59-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:26:9-28:54
+60            android:name="com.example.skaner.RozlozActivityBrakTowaru"
+60-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:26:19-59
+61            android:screenOrientation="portrait"
+61-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:27:13-49
+62            android:windowSoftInputMode="adjustPan" />
+62-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:28:13-52
+63        <activity
+63-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:29:9-32:55
+64            android:name="com.example.skaner.RozlozActivity"
+64-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:30:13-43
+65            android:screenOrientation="portrait"
+65-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:31:13-49
+66            android:windowSoftInputMode="adjustPan" />
+66-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:32:13-52
+67        <activity
+67-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:33:9-36:55
+68            android:name="com.example.skaner.ZlokalizujActivityCrud"
+68-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:34:13-51
+69            android:screenOrientation="portrait"
+69-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:35:13-49
+70            android:windowSoftInputMode="adjustPan" />
+70-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:36:13-52
+71        <activity
+71-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:37:9-40:55
+72            android:name="com.example.skaner.ZlokalizujActivity"
+72-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:38:13-47
+73            android:screenOrientation="portrait"
+73-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:39:13-49
+74            android:windowSoftInputMode="adjustPan" />
+74-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:40:13-52
+75        <activity
+75-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:41:9-45:15
+76            android:name="com.example.skaner.MenuActivity"
+76-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:42:13-41
+77            android:screenOrientation="portrait"
+77-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:43:13-49
+78            android:windowSoftInputMode="adjustPan" />
+78-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:44:13-52
+79        <activity
+79-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:46:9-49:49
+80            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+80-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:47:13-74
+81            android:clearTaskOnLaunch="true"
+81-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:49:13-45
+82            android:screenOrientation="portrait"
+82-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:48:13-49
+83            android:stateNotNeeded="true"
+83-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:51:13-42
+84            android:theme="@style/zxing_CaptureTheme"
+84-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:52:13-54
+85            android:windowSoftInputMode="stateAlwaysHidden" />
+85-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\ER\.gradle\caches\transforms-2\files-2.1\682178dafc73899113e92ae35a5e3880\jetified-zxing-android-embedded-4.0.2\AndroidManifest.xml:53:13-60
+86        <activity
+86-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:50:9-59:20
+87            android:name="com.example.skaner.LoginActivity"
+87-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:51:13-42
+88            android:screenOrientation="portrait"
+88-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:52:13-49
+89            android:windowSoftInputMode="adjustPan" >
+89-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:53:13-52
+90            <intent-filter>
+90-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:54:13-58:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:55:17-69
+91-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:55:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:57:17-77
+93-->C:\Users\ER\AndroidStudioProjects\skaner\app\src\main\AndroidManifest.xml:57:27-74
+94            </intent-filter>
+95        </activity>
+96    </application>
+97
+98</manifest>

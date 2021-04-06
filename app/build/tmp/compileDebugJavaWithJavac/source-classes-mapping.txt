@@ -1,0 +1,47 @@
+com/example/skaner/WydajActivityLokalizacja.java
+ com.example.skaner.WydajActivityLokalizacja
+ com.example.skaner.WydajActivityLokalizacja$1
+ com.example.skaner.WydajActivityLokalizacja$2
+ com.example.skaner.WydajActivityLokalizacja$3
+com/example/skaner/ZlokalizujActivity.java
+ com.example.skaner.ZlokalizujActivity
+ com.example.skaner.ZlokalizujActivity$1
+com/example/skaner/RozlozActivity.java
+ com.example.skaner.RozlozActivity
+ com.example.skaner.RozlozActivity$1
+ com.example.skaner.RozlozActivity$1$1
+ com.example.skaner.RozlozActivity$1$2
+ com.example.skaner.RozlozActivity$2
+ com.example.skaner.RozlozActivity$3
+ com.example.skaner.RozlozActivity$4
+ com.example.skaner.RozlozActivity$5
+ com.example.skaner.RozlozActivity$5$1
+com/example/skaner/BuildConfig.java
+ com.example.skaner.BuildConfig
+com/example/skaner/ZlokalizujActivityCrud.java
+ com.example.skaner.ZlokalizujActivityCrud
+com/example/skaner/BrakPoloczenia.java
+ com.example.skaner.BrakPoloczenia
+ com.example.skaner.BrakPoloczenia$1
+ com.example.skaner.BrakPoloczenia$2
+com/example/skaner/MenuActivity.java
+ com.example.skaner.MenuActivity
+com/example/skaner/RozlozActivityBrakTowaru.java
+ com.example.skaner.RozlozActivityBrakTowaru
+com/example/skaner/KlasaConnection.java
+ com.example.skaner.KlasaConnection
+com/example/skaner/WydajActivity.java
+ com.example.skaner.WydajActivity
+ com.example.skaner.WydajActivity$1
+ com.example.skaner.WydajActivity$2
+ com.example.skaner.WydajActivity$2$1
+ com.example.skaner.WydajActivity$2$2
+ com.example.skaner.WydajActivity$2$3
+ com.example.skaner.WydajActivity$3
+ com.example.skaner.WydajActivity$4
+ com.example.skaner.WydajActivity$5
+ com.example.skaner.WydajActivity$6
+com/example/skaner/RozlozActivityJestTowar.java
+ com.example.skaner.RozlozActivityJestTowar
+com/example/skaner/LoginActivity.java
+ com.example.skaner.LoginActivity

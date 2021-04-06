@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Wydanie towaru z gniazda"
+        android:textColor="#1B1A1A"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/wydaj_lokalizacja_gniazdo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#1B1A1A"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/wydaj_lokalizacja_kod_towaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#1B1A1A"
+        android:textSize="24sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <TextView
+            android:id="@+id/wydaj_lokalizacja_ilosc"
+            android:layout_width="100dp"
+            android:layout_height="63dp"
+            android:padding="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/wydaj_lokalizacja_minus_btn"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:onClick="wydaj_lokalizacja_minus_btn"
+            android:text="-"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wydaj_lokalizacja_ilosc"
+            app:layout_constraintEnd_toStartOf="@+id/wydaj_lokalizacja_ilosc"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/wydaj_lokalizacja_ilosc" />
+
+        <Button
+            android:id="@+id/wydaj_lokalizacja_plus_btn"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:onClick="wydaj_lokalizacja_plus_btn"
+            android:text="+"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wydaj_lokalizacja_ilosc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/wydaj_lokalizacja_ilosc"
+            app:layout_constraintTop_toTopOf="@+id/wydaj_lokalizacja_ilosc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wydaj_lokalizacja_cancel_btn"
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Anuluj" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/wydaj_lokalizacja_confirm_btn"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zapisz" />
+    </LinearLayout>
+
+</LinearLayout>

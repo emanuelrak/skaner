@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="10dp"
+        android:text="Nie znaleziono kodu\nDodaj nowy towar:"
+        android:textColor="#1B1A1A"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/rozloz_braktowaru_kod"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#1B1A1A"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/rozloz_braktowaru_nazwa"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:ems="10"
+        android:hint="Wpisz nazwę nowego towaru"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <EditText
+            android:id="@+id/rozloz_braktowaru_ilosc"
+            android:layout_width="100dp"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/rozloz_braktowaru_plus_btn"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:onClick="rozloz_braktowaru_plus_btn"
+            android:text="+"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rozloz_braktowaru_ilosc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rozloz_braktowaru_ilosc"
+            app:layout_constraintTop_toTopOf="@+id/rozloz_braktowaru_ilosc" />
+
+        <Button
+            android:id="@+id/rozloz_braktowaru_minus_btn"
+            android:layout_width="49dp"
+            android:layout_height="53dp"
+            android:onClick="rozloz_braktowaru_minus_btn"
+            android:text="-"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rozloz_braktowaru_ilosc"
+            app:layout_constraintEnd_toStartOf="@+id/rozloz_braktowaru_ilosc"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rozloz_braktowaru_ilosc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podaj ilość"
+            android:textColor="#1B1A1A"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/rozloz_braktowaru_minus_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rozloz_braktowaru_cancel_btn"
+            android:text="Anuluj" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rozloz_braktowaru_confirm_btn"
+            android:text="Zapisz" />
+    </LinearLayout>
+
+</LinearLayout>

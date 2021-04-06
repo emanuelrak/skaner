@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZlokalizujActivity">
+
+    <EditText
+        android:id="@+id/zlokalizuj_kod"
+        android:layout_width="281dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Podaj kod towaru lub urzyj sknera"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/zlokalizuj_szukaj_btn"
+        android:layout_width="51dp"
+        android:layout_height="55dp"
+        android:onClick="zlokalizuj_search_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/zlokalizuj_kod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/zlokalizuj_kod"
+        app:layout_constraintTop_toTopOf="@+id/zlokalizuj_kod"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+
+    <ImageView
+        android:id="@+id/zlokalizuj_skaner_btn"
+        android:layout_width="388dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FFC107"
+        android:onClick="zlokalizuj_skaner_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/scan" />
+
+    <ListView
+        android:id="@+id/zlokalizuj_listview"
+        android:layout_width="387dp"
+        android:layout_height="498dp"
+        app:layout_constraintBottom_toTopOf="@+id/zlokalizuj_skaner_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="384dp"
+        android:layout_height="35dp"
+        android:background="#FFC107"
+        android:text="\tNazwa\t\t\t\t|\t\t\t\tGniazdo\t\t\t\t|\t\t\t\tIlość"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/zlokalizuj_listview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/zlokalizuj_listview"
+        app:layout_constraintTop_toBottomOf="@+id/zlokalizuj_kod" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

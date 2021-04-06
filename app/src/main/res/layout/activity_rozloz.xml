@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RozlozActivity">
+
+    <ListView
+        android:id="@+id/rozloz_activity_listview"
+        android:layout_width="337dp"
+        android:layout_height="381dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/rozloz_activity_scan_btn"
+        android:layout_width="203dp"
+        android:layout_height="113dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FFC107"
+        android:onClick="rozloz_scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rozloz_activity_listview"
+        app:srcCompat="@drawable/scan" />
+
+    <Button
+        android:id="@+id/rozloz_activity_confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rozloz_activity_confirm_btn"
+        android:text="Zatwierdź"
+        app:layout_constraintBottom_toTopOf="@+id/rozloz_activity_cancel_btn"
+        app:layout_constraintEnd_toStartOf="@+id/rozloz_activity_scan_btn"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rozloz_activity_listview"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <Button
+        android:id="@+id/rozloz_activity_cancel_btn"
+        android:layout_width="118dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="rozloz_activity_cancel_btn"
+        android:text="Anuluj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rozloz_activity_scan_btn"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="339dp"
+        android:layout_height="32dp"
+        android:background="#FFC107"
+        android:text="\tKod\t\t\t\t|\t\t\t\tGniazdo\t\t\t\t|\t\t\t\tIlość"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rozloz_activity_listview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Rozkładanie"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rozloz_activity_gniazdo_kod"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/rozloz_activity_qr_btn"
+        android:layout_width="82dp"
+        android:layout_height="74dp"
+        android:background="#FFC107"
+        android:onClick="rozloz_scan"
+        app:layout_constraintBottom_toBottomOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintStart_toEndOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintTop_toTopOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/qr" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gniazdo: "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintEnd_toStartOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintTop_toTopOf="@+id/rozloz_activity_gniazdo_kod"
+        app:layout_constraintVertical_bias="0.583" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

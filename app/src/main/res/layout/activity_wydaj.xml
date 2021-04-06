@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WydajActivity">
+
+    <ListView
+        android:id="@+id/activity_wydaj_listview_lokalizacja"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:background="#EFEAEA"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/activity_wydaj_listview_kosz"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:background="#EFEAEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/activity_wydaj_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="wydaj_cancel_btn"
+        android:text="Anuluj"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_wydaj_confirm_btn"
+        app:layout_constraintEnd_toStartOf="@+id/activity_wydaj_confirm_btn"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_wydaj_confirm_btn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/activity_wydaj_kod_search_btn"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:background="#CAC1C1"
+        android:onClick="wydaj_kod_search_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_wydaj_kod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/activity_wydaj_kod"
+        app:layout_constraintTop_toTopOf="@+id/activity_wydaj_kod"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#706C6C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <Button
+        android:id="@+id/activity_wydaj_confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="wydaj_confirm_btn"
+        android:text="Zatwierdź"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_wydaj_listview_kosz"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <ImageView
+        android:id="@+id/activity_wydaj_scan_btn"
+        android:layout_width="125dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="13dp"
+        android:background="#FFC107"
+        android:onClick="wydaj_scan"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_wydaj_confirm_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/activity_wydaj_confirm_btn"
+        app:layout_constraintTop_toTopOf="@+id/activity_wydaj_confirm_btn"
+        app:srcCompat="@drawable/scan" />
+
+    <EditText
+        android:id="@+id/activity_wydaj_kod"
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Wpisz kod towaru do wydania"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/activity_wydaj_listview_lokalizacja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
