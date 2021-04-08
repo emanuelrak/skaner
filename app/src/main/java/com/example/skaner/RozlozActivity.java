@@ -9,10 +9,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -29,6 +31,7 @@ public class RozlozActivity extends AppCompatActivity {
     Connection poloczenie = null;
     EditText gniazdo_kod;
     ListView listView;
+    ImageView skaner_ean,skaner_qr;
     Intent intent;
     KlasaConnection conn = new KlasaConnection();
     ArrayList<String> arrayList;
@@ -42,11 +45,38 @@ public class RozlozActivity extends AppCompatActivity {
         arrayList=intent.getStringArrayListExtra("list");
         URL=intent.getStringExtra("url");
         nazwa_urzytkownika=intent.getStringExtra("nazwa");
+        skaner_ean=findViewById(R.id.rozloz_activity_scan_btn);
+        skaner_qr=findViewById(R.id.rozloz_activity_qr_btn);
     }
 
     @Override
     protected void onResume(){
         super.onResume();
+        skaner_ean.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_MOVE){
+                    IntentIntegrator intentIntegrator = new IntentIntegrator(RozlozActivity.this);
+                    intentIntegrator.setOrientationLocked(false);
+                    intentIntegrator.setTorchEnabled(true);
+                    intentIntegrator.initiateScan();
+                }
+                return false;
+            }
+        });
+        skaner_qr.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_MOVE){
+                    IntentIntegrator intentIntegrator = new IntentIntegrator(RozlozActivity.this);
+                    intentIntegrator.setOrientationLocked(false);
+                    intentIntegrator.setDesiredBarcodeFormats("QR_CODE");
+                    intentIntegrator.setTorchEnabled(true);
+                    intentIntegrator.initiateScan();
+                }
+                return false;
+            }
+        });
         createList();
     }
 
@@ -54,7 +84,14 @@ public class RozlozActivity extends AppCompatActivity {
     public void rozloz_scan(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setOrientationLocked(false);
-        intentIntegrator.setTorchEnabled(true);
+        intentIntegrator.setTorchEnabled(false);
+        intentIntegrator.initiateScan();
+    }
+    public void rozloz_scan_qr(View view){
+        IntentIntegrator intentIntegrator = new IntentIntegrator(this);
+        intentIntegrator.setOrientationLocked(false);
+        intentIntegrator.setDesiredBarcodeFormats("QR_CODE");
+        intentIntegrator.setTorchEnabled(false);
         intentIntegrator.initiateScan();
     }
 

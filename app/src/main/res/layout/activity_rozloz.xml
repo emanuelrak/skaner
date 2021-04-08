@@ -101,7 +101,7 @@
         android:layout_width="82dp"
         android:layout_height="74dp"
         android:background="#FFC107"
-        android:onClick="rozloz_scan"
+        android:onClick="rozloz_scan_qr"
         app:layout_constraintBottom_toBottomOf="@+id/rozloz_activity_gniazdo_kod"
         app:layout_constraintStart_toEndOf="@+id/rozloz_activity_gniazdo_kod"
         app:layout_constraintTop_toTopOf="@+id/rozloz_activity_gniazdo_kod"

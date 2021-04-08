@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,6 +28,7 @@ ZlokalizujActivity extends AppCompatActivity {
     Connection poloczenie = null;
     EditText kod;
     ListView listView;
+    ImageView skaner;
     KlasaConnection conn = new KlasaConnection();
     ArrayList<String> arrayList=new ArrayList<>();
     BrakPoloczenia brakPoloczenia = new BrakPoloczenia(this);
@@ -36,11 +39,24 @@ ZlokalizujActivity extends AppCompatActivity {
         Intent intent = getIntent();
         URL = intent.getStringExtra("URL");
         nazwa_urzytkownika = intent.getStringExtra("NAZWA");
+        skaner=findViewById(R.id.zlokalizuj_skaner_btn);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        skaner.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_MOVE){
+                    IntentIntegrator intentIntegrator = new IntentIntegrator(ZlokalizujActivity.this);
+                    intentIntegrator.setOrientationLocked(false);
+                    intentIntegrator.setTorchEnabled(true);
+                    intentIntegrator.initiateScan();
+                }
+                return false;
+            }
+        });
         createList();
     }
 
@@ -99,7 +115,7 @@ ZlokalizujActivity extends AppCompatActivity {
     public void zlokalizuj_skaner_btn(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setOrientationLocked(false);
-        intentIntegrator.setTorchEnabled(true);
+        intentIntegrator.setTorchEnabled(false);
         intentIntegrator.initiateScan();
     }
     @Override

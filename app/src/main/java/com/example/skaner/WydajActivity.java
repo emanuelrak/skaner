@@ -7,10 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -28,6 +30,7 @@ public class WydajActivity extends AppCompatActivity {
     EditText kod;
     ListView listView_lokalizacja,listView_kosz;
     Intent intent;
+    ImageView skaner;
     KlasaConnection conn = new KlasaConnection();
     ArrayList<String> arrayList_lokalizacja = new ArrayList<>();
     ArrayList<String> arrayList_kosz = new ArrayList<>();
@@ -41,10 +44,23 @@ public class WydajActivity extends AppCompatActivity {
         arrayList_kosz=intent.getStringArrayListExtra("list");
         URL=intent.getStringExtra("url");
         nazwa_urzytkownika=intent.getStringExtra("nazwa");
+        skaner=findViewById(R.id.activity_wydaj_scan_btn);
     }
     @Override
     protected void onResume(){
         super.onResume();
+        skaner.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if(event.getAction() == MotionEvent.ACTION_MOVE){
+                    IntentIntegrator intentIntegrator = new IntentIntegrator(WydajActivity.this);
+                    intentIntegrator.setOrientationLocked(false);
+                    intentIntegrator.setTorchEnabled(true);
+                    intentIntegrator.initiateScan();
+                }
+                return false;
+            }
+        });
         createList_kosz();
     }
 
@@ -149,7 +165,7 @@ public class WydajActivity extends AppCompatActivity {
     public void wydaj_scan(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setOrientationLocked(false);
-        intentIntegrator.setTorchEnabled(true);
+        intentIntegrator.setTorchEnabled(false);
         intentIntegrator.initiateScan();
     }
     @Override
