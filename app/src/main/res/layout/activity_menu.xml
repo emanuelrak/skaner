@@ -29,10 +29,10 @@
         android:onClick="wydaj_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintHorizontal_bias="0.866"
         app:layout_constraintStart_toEndOf="@+id/menu_rozloz"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695"
+        app:layout_constraintVertical_bias="0.694"
         app:srcCompat="@drawable/wydaj" />
 
     <TextView
@@ -42,25 +42,11 @@
         android:onClick="wydaj_btn"
         android:text="@string/wydaj"
         android:textAlignment="center"
-        android:textColor="#4CAF50"
+        android:textColor="#FFFF5722"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/menu_wydaj"
         app:layout_constraintStart_toStartOf="@+id/menu_wydaj"
         app:layout_constraintTop_toBottomOf="@+id/menu_wydaj" />
-
-    <TextView
-        android:layout_width="115dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="8dp"
-        android:onClick="rozloz_btn"
-        android:text="@string/rozloz"
-        android:textAlignment="center"
-        android:textColor="#F44336"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/menu_rozloz"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="@+id/menu_rozloz"
-        app:layout_constraintTop_toBottomOf="@+id/menu_rozloz" />
 
     <ImageView
         android:id="@+id/menu_rozloz"
@@ -71,11 +57,25 @@
         android:onClick="rozloz_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695"
+        app:layout_constraintVertical_bias="0.694"
         app:srcCompat="@drawable/rozloz" />
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:onClick="rozloz_btn"
+        android:text="@string/rozloz"
+        android:textAlignment="center"
+        android:textColor="#FFFF5722"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/menu_rozloz"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/menu_rozloz"
+        app:layout_constraintTop_toBottomOf="@+id/menu_rozloz" />
 
     <TextView
         android:layout_width="121dp"
@@ -84,7 +84,7 @@
         android:onClick="zlokalizuj"
         android:text="@string/zlokalizuj"
         android:textAlignment="center"
-        android:textColor="#E91E63"
+        android:textColor="#FFFF5722"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/menu_zlokalizuj"
         app:layout_constraintStart_toStartOf="@+id/menu_zlokalizuj"

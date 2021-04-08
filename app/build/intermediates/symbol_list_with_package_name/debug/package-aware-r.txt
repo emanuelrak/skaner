@@ -1746,6 +1746,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable qr
 drawable rozloz
+drawable rozloz_old
 drawable scan
 drawable skaner_ico
 drawable skaner_logo
@@ -1753,7 +1754,9 @@ drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable wydaj
+drawable wydaj_old
 drawable zlokalizuj
+drawable zlokalizuj_old
 id ALT
 id BOTTOM_END
 id BOTTOM_START

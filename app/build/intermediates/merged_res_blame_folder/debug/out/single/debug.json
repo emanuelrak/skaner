@@ -24,6 +24,10 @@
         "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\qr.png"
     },
     {
+        "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wydaj_old.png.flat",
+        "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\wydaj_old.png"
+    },
+    {
         "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
@@ -68,6 +72,10 @@
         "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\rozloz.png"
     },
     {
+        "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_zlokalizuj_old.png.flat",
+        "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\zlokalizuj_old.png"
+    },
+    {
         "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rozloz_confirm.xml.flat",
         "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\layout\\activity_rozloz_confirm.xml"
     },
@@ -76,12 +84,16 @@
         "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\layout\\activity_wydaj_lokalizacja.xml"
     },
     {
+        "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skaner_ico.png.flat",
+        "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\skaner_ico.png"
+    },
+    {
         "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu_prompt_connerr.xml.flat",
         "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\layout\\activity_menu_prompt_connerr.xml"
     },
     {
-        "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_skaner_ico.png.flat",
-        "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\skaner_ico.png"
+        "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rozloz_old.png.flat",
+        "source": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\src\\main\\res\\drawable\\rozloz_old.png"
     },
     {
         "merged": "C:\\Users\\ER\\AndroidStudioProjects\\skaner\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",

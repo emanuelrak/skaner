@@ -61,7 +61,7 @@
         android:layout_width="339dp"
         android:layout_height="32dp"
         android:background="#FFC107"
-        android:text="\tKod\t\t\t\t|\t\t\t\tGniazdo\t\t\t\t|\t\t\t\tIlość"
+        android:text="\tKod\t\t\t\t|\t\t\t\tNazwa\t\t\t\t|\t\t\t\tIlość"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/rozloz_activity_listview"
