@@ -54,6 +54,7 @@ public class RozlozActivity extends AppCompatActivity {
     public void rozloz_scan(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setOrientationLocked(false);
+        intentIntegrator.setTorchEnabled(true);
         intentIntegrator.initiateScan();
     }
 

@@ -149,6 +149,7 @@ public class WydajActivity extends AppCompatActivity {
     public void wydaj_scan(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setOrientationLocked(false);
+        intentIntegrator.setTorchEnabled(true);
         intentIntegrator.initiateScan();
     }
     @Override

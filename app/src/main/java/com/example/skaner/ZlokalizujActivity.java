@@ -99,6 +99,7 @@ ZlokalizujActivity extends AppCompatActivity {
     public void zlokalizuj_skaner_btn(View view){
         IntentIntegrator intentIntegrator = new IntentIntegrator(this);
         intentIntegrator.setOrientationLocked(false);
+        intentIntegrator.setTorchEnabled(true);
         intentIntegrator.initiateScan();
     }
     @Override
